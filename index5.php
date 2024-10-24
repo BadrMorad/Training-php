@@ -2,8 +2,6 @@
 Class Ordinateur {
     private $_marque;// Attribut pour stocker la marque de l'ordinateur
     private $_cpuClock; // Attribut pour stocker la vitesse du processeur
-
-
     private static $_nbPostes = 0; // Attribut statique pour compter le nombre d'instances
 // Constructeur qui initialise les attributs avec les données fournies
     public function __construct($data){
@@ -18,12 +16,9 @@ Class Ordinateur {
     }// Méthode pour définir la vitesse du processeur
     public function setCpuClock($speed){
         $this->_cpuClock = $speed;
-
     }
-    
     public static function combien(){//méthode statique
     echo self::$_nbPostes."<br/>";
-
 }
 
  }
